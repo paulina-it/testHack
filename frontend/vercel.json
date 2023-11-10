@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "test-app",
+    "builds": [
+        {
+            "src": "/index.html",
+            "use": "@vercel/test"
+        }
+    ],
+    "routes": [
+        {
+            "src":"/(.*))",
+            "dest": "/index.html"
+        }
+    ]
+}
